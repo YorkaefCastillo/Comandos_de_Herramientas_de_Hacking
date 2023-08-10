@@ -1,0 +1,59 @@
+****COMANDOS DE SSH****
+--------------------------------------------------------------------------------------------------------------------------
+Conexión SSH a un Servidor Remoto:
+Comando: ssh usuario@dirección-IP
+Explicación: Esto establece una conexión SSH con un servidor remoto utilizando el nombre de usuario y la dirección IP del servidor.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Especificar un Puerto SSH Personalizado:
+Comando: ssh -p puerto usuario@dirección-IP
+Explicación: Si el servidor SSH está escuchando en un puerto diferente al predeterminado (22), puedes usar esta opción para especificar el puerto correcto.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Copiar Archivos a través de SSH (SCP):
+Comando: scp archivo-local usuario@dirección-IP:ruta-destino-remota
+Explicación: Utiliza scp para copiar archivos desde tu computadora local al servidor remoto.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Copiar Archivos desde el Servidor Remoto:
+Comando: scp usuario@dirección-IP:ruta-archivo-remoto archivo-local
+Explicación: Copia archivos desde el servidor remoto a tu computadora local.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Generar una Clave SSH:
+Comando: ssh-keygen
+Explicación: Genera un par de claves SSH (pública y privada) que puedes usar para autenticarte sin contraseña.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Agregar Clave Pública al Servidor Remoto:
+Comando: ssh-copy-id usuario@dirección-IP
+Explicación: Agrega tu clave pública al archivo ~/.ssh/authorized_keys en el servidor remoto para autenticación sin contraseña.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Túnel SSH (Puenteo):
+Comando: ssh -L puerto-local:dirección-IP-destino:puerto-destino usuario@servidor-intermedio
+Explicación: Crea un túnel SSH para redirigir tráfico de un puerto local a un destino remoto a través de un servidor intermedio.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Acceso Remoto Gráfico (X11 Forwarding):
+Comando: ssh -X usuario@dirección-IP
+Explicación: Permite ejecutar aplicaciones gráficas en el servidor remoto y mostrarlas en tu computadora local.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Cerrar Sesión SSH:
+Comando: exit
+Explicación: Cierra la conexión SSH y vuelve a tu terminal local.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Sesión SSH Persistente:
+Comando: ssh -N -f -L puerto-local:dirección-IP-destino:puerto-destino usuario@servidor
+Explicación: Crea un túnel SSH en segundo plano que persiste incluso después de cerrar tu terminal.

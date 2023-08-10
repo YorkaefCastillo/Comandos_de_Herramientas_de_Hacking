@@ -1,0 +1,105 @@
+****COMANDOS DE NMAP ****
+
+Escaneo de Puertos Básico:
+Comando: nmap <objetivo>
+Explicación: Nmap verifica qué puertos están abiertos en la computadora objetivo. Los puertos abiertos pueden indicar servicios en funcionamiento.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de Puertos Específicos:
+Comando: nmap -p <puertos> <objetivo>
+Explicación: Puedes especificar los números de puerto para escanear solo esos puertos en lugar de todos.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de Rango de Puertos:
+Comando: nmap -p <rango-puertos> <objetivo>
+Explicación: Escanea un rango de puertos, como del 1 al 100, para encontrar cuáles están abiertos.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Detalles de Versión de Servicio:
+Comando: nmap -sV <objetivo>
+Explicación: Además de los puertos abiertos, Nmap intentará detectar las versiones de los servicios que se ejecutan en esos puertos.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de Sistema Operativo:
+Comando: nmap -O <objetivo>
+Explicación: Intenta adivinar qué sistema operativo está utilizando la computadora objetivo.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo en Modo Sigiloso (Stealth):
+Comando: nmap -sS <objetivo>
+Explicación: Realiza un escaneo sigiloso para que sea menos detectable por el objetivo.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de UDP:
+Comando: nmap -sU <objetivo>
+Explicación: Escanea los protocolos UDP, que son utilizados por algunos servicios para comunicarse.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de Red Completa:
+Comando: nmap -sP <rango-IPs>
+Explicación: Realiza un escaneo Ping para ver qué direcciones IP están activas en una red.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo con Scripts:
+Comando: nmap -sC <objetivo>
+Explicación: Utiliza scripts para buscar vulnerabilidades en servicios y aplicaciones.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escaneo Rápido:
+Comando: nmap -F <objetivo>
+Explicación: Realiza un escaneo rápido de los 100 puertos más comunes.
+
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+****EJEMPLOS DE USO****
+
+Escenario: Quieres saber qué servicios están funcionando en tu propia computadora para asegurarte de que no haya vulnerabilidades.
+Comando: nmap localhost
+Explicación: Esto escanea los puertos de tu propia computadora para ver qué servicios están activos.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Estás evaluando la seguridad de un servidor web para un cliente.
+Comando: nmap -p 80,443 <dirección-IP>
+Explicación: Escanea los puertos 80 y 443 en la dirección IP del servidor para ver si el servidor web y el servidor seguro están funcionando correctamente.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Estás investigando la red de tu hogar para asegurarte de que no haya dispositivos desconocidos conectados.
+Comando: nmap -sP 192.168.1.0/24
+Explicación: Escanea toda la subred de tu red doméstica para identificar dispositivos activos.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Deseas identificar los sistemas operativos y versiones de servicios en un servidor de correo electrónico.
+Comando: nmap -sV -O <dirección-IP>
+Explicación: Escanea la dirección IP del servidor de correo para averiguar qué servicios están ejecutándose y qué sistema operativo podría estar utilizando.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Tienes permiso para auditar la seguridad de una red empresarial y deseas encontrar vulnerabilidades en servicios comunes.
+Comando: nmap -sC <dirección-IP>
+Explicación: Utiliza scripts de Nmap para buscar posibles problemas de seguridad en los servicios identificados en la dirección IP.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Quieres hacer un escaneo rápido de los dispositivos en tu red para ver cuáles están activos.
+Comando: nmap -F 192.168.1.0/24
+Explicación: Realiza un escaneo rápido de los 100 puertos más comunes en la subred para encontrar dispositivos activos.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Escenario: Te han dado un rango de direcciones IP y necesitas saber qué sistemas operativos están en funcionamiento.
+Comando: nmap -O 192.168.1.1-10
+Explicación: Escanea un rango de direcciones IP para intentar determinar los sistemas operativos que se están ejecutando.
