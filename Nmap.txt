@@ -103,3 +103,39 @@ Explicación: Realiza un escaneo rápido de los 100 puertos más comunes en la s
 Escenario: Te han dado un rango de direcciones IP y necesitas saber qué sistemas operativos están en funcionamiento.
 Comando: nmap -O 192.168.1.1-10
 Explicación: Escanea un rango de direcciones IP para intentar determinar los sistemas operativos que se están ejecutando.
+
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+****COMANDOS CLAVE PARA ESCANE***
+nmap -p- -sVC -sC --open -sS -vvv -n -Pn <IP al atacado> -oN escaneo
+
+---------------------------------------------------------------------------------------------------------------------------
+
++++EXPLICACION DEL COMANDO
+
+---------------------------------------------------------------------------------------------------------------------------
+
+nmap: Este es el comando principal para ejecutar Nmap.
+
+-p-: Esto indica que quieres escanear todos los puertos (desde el puerto 1 hasta el 65535). El guión después de -p significa "todos los puertos".
+
+-sVC: Estos son indicadores para diferentes tipos de escaneo y detección de versiones:
+
+-sV: Significa "escaneo de versión", lo que intenta determinar las versiones de los servicios que están en los puertos abiertos.
+-C: Utiliza scripts de Nmap para buscar problemas comunes de seguridad en los servicios encontrados.
+--open: Esto filtra el resultado para mostrar solo los puertos que están abiertos. Ignora los puertos cerrados.
+
+-sS: Indica un escaneo de tipo "SYN scan", que es un tipo de escaneo sigiloso para determinar qué puertos están abiertos.
+
+-vvv: Esto establece un nivel de verbosidad muy alto, lo que significa que verás información detallada sobre el proceso de escaneo en la salida.
+
+-n: Indica a Nmap que no realice resolución de DNS para las direcciones IP, lo que acelera el escaneo.
+
+-Pn: Ignora el descubrimiento de hosts y trata todas las direcciones IP como en línea, lo que significa que no se enviarán pings de solicitud de respuesta.
+
+<IP al atacado>: Reemplaza esto con la dirección IP del objetivo que deseas escanear.
+
+-oN escaneo: Esto especifica que los resultados del escaneo se guardarán en un archivo llamado "escaneo".
+
+En resumen, este comando de Nmap realiza un escaneo exhaustivo de todos los puertos en la dirección IP del objetivo. Busca versiones de servicios y posibles vulnerabilidades, solo muestra los puertos abiertos, utiliza escaneo sigiloso para descubrir esos puertos y muestra información detallada en la salida. Además, se omite la resolución DNS y los pings, y los resultados se guardan en un archivo llamado "escaneo".
