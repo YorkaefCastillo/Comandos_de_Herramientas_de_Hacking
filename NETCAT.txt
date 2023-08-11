@@ -1,0 +1,62 @@
+****NETCAT****
+
+Crear un Servidor TCP:
+Comando: nc -l -p <puerto>
+Explicación: Crea un servidor en el puerto especificado, escuchando conexiones entrantes. Puedes enviar datos a este servidor desde un cliente.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conectar a un Servidor TCP:
+Comando: nc <dirección-IP> <puerto>
+Explicación: Conecta a un servidor en la dirección IP y puerto especificados. Puedes enviar y recibir datos a través de esta conexión.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Transferencia de Archivos:
+En el receptor (servidor): nc -l -p <puerto> > archivo_recibido
+En el remitente (cliente): nc <dirección-IP> <puerto> < archivo_a_enviar
+Explicación: En el receptor, se crea un servidor que recibe los datos y los guarda en un archivo. En el remitente, se envían los datos del archivo especificado al servidor.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Chat en la Red:
+En el receptor (servidor): nc -l -p <puerto>
+En el remitente (cliente): nc <dirección-IP> <puerto>
+Explicación: Permite una comunicación de chat bidireccional entre el servidor y el cliente a través de la conexión.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Escaneo de Puertos Remoto (Banner Grabbing):
+Comando: nc -v -n -z -w 1 <dirección-IP> <puerto-inicial>-<puerto-final>
+Explicación: Realiza un escaneo de puertos en la dirección IP especificada, mostrando si los puertos están abiertos y obteniendo banners (información de bienvenida) de servicios en esos puertos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reenvío de Puertos (Port Forwarding):
+Comando: nc -l -p <puerto-local> -c 'nc <dirección-IP-destino> <puerto-destino>'
+Explicación: Crea un servidor local que reenvía todo lo que recibe al servidor destino en otra dirección IP y puerto.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Conexión Inversa (Reverse Shell):
+En el receptor (cliente): nc -l -p <puerto>
+En el remitente (servidor): nc <dirección-IP> <puerto>
+Explicación: El cliente escucha y espera que el servidor se conecte, lo que puede utilizarse para obtener un acceso de shell en la máquina receptora.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+****COMANDO ESCUCHA****
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+nc -nlvp 443
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+nc: Es el comando para ejecutar Netcat, una herramienta de transferencia de datos y conexiones de red.
+-n: Evita la resolución DNS, lo que acelera el proceso.
+-l: Indica que Netcat debe escuchar conexiones entrantes.
+-v: Hace que Netcat muestre información detallada sobre lo que está sucediendo.
+-p 443: Establece el puerto en el que Netcat escuchará conexiones. En este caso, el puerto es el 443.
+
+Entonces, en resumen, el comando nc -nlvp 443 está configurando Netcat para escuchar en el puerto 443 y mostrar información detallada sobre las conexiones entrantes. Esto es útil para configurar un servidor en el puerto 443, que es comúnmente utilizado para conexiones seguras HTTPS, aunque en este contexto se podría usar para otros propósitos, como reenvío de puertos o pruebas de red.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------****SCRIPT PARA QUE APARESCA UN PRONT EN " NETCAT " ****
+script /dev/null -c bash

@@ -1,0 +1,47 @@
+****PING PARA VERIFICAR CONECTIVIDAD****
+
+Ping Simple:
+Comando: ping <dirección-IP>
+Explicación: Envía paquetes ICMP a la dirección IP para verificar si el host está activo. Muestra el tiempo de ida y vuelta de los paquetes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Número Limitado de Intentos:
+Comando: ping -c <número> <dirección-IP>
+Explicación: Limita el número de intentos de ping a la dirección IP.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ping Continuo:
+Comando: ping -t <dirección-IP> (Windows) o ping <dirección-IP> (Linux/Mac)
+Explicación: En Windows, -t permite hacer ping continuamente. En Linux/Mac, el ping también es continuo por defecto.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Intervalo de Ping Personalizado:
+Comando: ping -i <intervalo> <dirección-IP>
+Explicación: Define el intervalo de tiempo entre paquetes de ping en segundos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usar Dirección IP o Nombre de Host:
+Comando: ping <dirección-IP-o-nombre-de-host>
+Explicación: Puedes hacer ping usando tanto direcciones IP como nombres de host.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ping con Tamaño de Paquete Personalizado:
+Comando: ping -s <tamaño> <dirección-IP>
+Explicación: Envía paquetes ICMP de un tamaño específico en bytes.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ping en Windows con Intervalo y Recuento Específico:
+Comando: ping -n <recuento> -w <timeout> <dirección-IP> (Windows)
+Explicación: En Windows, -n especifica el número de intentos y -w define el tiempo de espera en milisegundos.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ping en Linux/Mac con Tiempo de Espera Específico:
+Comando: ping -W <timeout> <dirección-IP> (Linux/Mac)
+Explicación: En Linux/Mac, -W establece el tiempo de espera en segundos.

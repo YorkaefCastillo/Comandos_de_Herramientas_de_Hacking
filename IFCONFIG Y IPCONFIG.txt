@@ -1,0 +1,39 @@
+****IFCONFIG Y IPCONFIG****
+
+ifconfig (Linux/Unix):
+Comando: ifconfig
+Explicación: Muestra información sobre las interfaces de red en sistemas Unix/Linux, como direcciones IP, máscaras de red, direcciones MAC y más.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando: ifconfig <interfaz>
+Explicación: Muestra información específica de la interfaz de red especificada, como eth0, wlan0, etc.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando: ifconfig <interfaz> up/down
+Explicación: Activa (up) o desactiva (down) una interfaz de red.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ipconfig (Windows):
+
+Comando: ipconfig
+Explicación: Muestra información sobre las interfaces de red en sistemas Windows, como direcciones IP, máscaras de red, puertas de enlace y más.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando: ipconfig /all
+Explicación: Muestra información detallada de todas las interfaces de red en el sistema Windows.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando: ipconfig /release y ipconfig /renew
+Explicación: Libera (release) y renueva (renew) la dirección IP de una interfaz de red.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Comando: ipconfig /flushdns
+Explicación: Limpia la caché de resolución DNS en Windows.
