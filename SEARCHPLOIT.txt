@@ -1,0 +1,55 @@
+**** SEARCHSPLOIT ****
+
+Searchsploit es como una herramienta mágica que ayuda a encontrar soluciones a problemas en las computadoras. Puedes buscar lo que necesitas, ver los trucos que tiene, aprender cómo funcionan y guardar los que te gusten. Pero recuerda, algunos trucos son poderosos, así que asegúrate de entenderlos bien antes de usarlos en una computadora, y siempre pide permiso a un adulto. ¡Es como un cuaderno de magia para computadoras que te ayuda a aprender y resolver cosas!
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Instalar searchsploit (si no está instalado):
+Si no tienes searchsploit instalado, puedes obtenerlo instalando exploitdb, que incluye searchsploit. En sistemas basados en Debian/Ubuntu, puedes ejecutar: sudo apt-get install exploitdb. En otros sistemas, los comandos pueden variar.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Buscar una Vulnerabilidad:
+Ejecuta searchsploit <nombre-vulnerabilidad> para buscar exploits relacionados con la vulnerabilidad que deseas encontrar. Por ejemplo: searchsploit Windows 10.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Ver los Resultados:
+searchsploit mostrará una lista de resultados que coinciden con la búsqueda. Cada resultado incluirá un identificador, el nombre del archivo, la ruta y una descripción breve.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Visualizar el Exploit:
+Copia la ruta del archivo del exploit que deseas ver y ejecuta searchsploit -x <ruta-del-archivo>. Esto mostrará el contenido del exploit en la terminal.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Copiar el Exploit a un Directorio:
+Si deseas copiar el exploit a un directorio específico, utiliza searchsploit -m <ruta-del-archivo>. Esto copiará el archivo a tu directorio actual.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. Ejecutar el Exploit (con precaución):
+Antes de ejecutar cualquier exploit, asegúrate de entender cómo funciona y de que tienes permiso legal para hacerlo. Muchos exploits pueden ser perjudiciales si se usan de manera inadecuada.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. Actualizar la Base de Datos (si es necesario):
+Periodicamente, puedes actualizar la base de datos de searchsploit con nuevos exploits utilizando el comando searchsploit -u.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**** BUSCAR VULNERABILIDADES CON SEARCSPLOIT ****
+
+*Buscar*
+Comando: 
+Searchsploit <Version de la vulnerabiliudad que encontro por ejemplo: "vsftpd 2.3.4" esta es la version de la vulnerabilidad de de tcp >
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*Descargar exploit*
+searchsploit -m <aqui va el path de el exploit que quiere descargar>
+
+***IMPORTANTE***
+Esta Herramiento aveses no sirven los exploit pero da la informacion para poderla buscar y asi mismo poder usarlo
+Si el exploit que te da  la herramienta no sirve lo que tienes que hacer es giarte  en el tipo de exploit y buscarla en github.
