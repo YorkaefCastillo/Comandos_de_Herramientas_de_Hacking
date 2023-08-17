@@ -1,0 +1,56 @@
+****NESSUS****
+
+Resumen de Nessus y su Uso Paso a Paso:
+
+Nessus es una herramienta de escaneo de vulnerabilidades que se utiliza para identificar posibles debilidades en sistemas y redes. Aquí tienes una guía paso a paso sobre cómo usar Nessus:
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Instalación y Configuración:
+Descarga e instala Nessus en tu sistema.
+Accede a la interfaz web de Nessus a través de tu navegador usando la dirección https://localhost:8834.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Registro y Licencia:
+Crea una cuenta en Nessus y proporciona la clave de licencia para activar la herramienta.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Creación de un Nuevo Escaneo:
+Haz clic en "New Scan" (Nuevo Escaneo) para configurar uno.
+Define un nombre para el escaneo y selecciona el tipo de escaneo (por ejemplo, "Basic Network Scan").
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Configuración de Objetivos:
+Especifica los objetivos que deseas escanear, ya sea una dirección IP, un rango de direcciones IP o un dominio.
+
+Selección de Políticas:
+Elige una política de escaneo. Las políticas definen qué tipos de vulnerabilidades y pruebas se llevarán a cabo.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Configuración Avanzada (Opcional):
+Si deseas, puedes ajustar configuraciones avanzadas como la exclusión de IPs, los puertos a escanear y más.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programación (Opcional):
+Puedes programar el escaneo para que se ejecute automáticamente en momentos específicos.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iniciar el Escaneo:
+Haz clic en "Launch" (Iniciar) para comenzar el escaneo. Nessus explorará los objetivos y buscará posibles vulnerabilidades.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Análisis de Resultados:
+Una vez finalizado el escaneo, revisa los resultados en el informe generado por Nessus. Los problemas se clasifican según su gravedad.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Resolución de Problemas:
+
+Utiliza los detalles del informe para abordar las vulnerabilidades y debilidades encontradas en los sistemas.
