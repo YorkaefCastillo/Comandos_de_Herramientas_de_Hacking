@@ -1,0 +1,173 @@
+**** ARP-SCAN ****
+
+Explicación de ARP-Scan y su Uso:
+
+ARP-Scan es una herramienta que ayuda a identificar dispositivos en una red local. Imagina tu red como una ciudad con casas (dispositivos) y calles (conexiones). ARP-Scan es como un detective que camina por las calles y llama a las puertas para ver quién vive en cada casa.
+
+Usamos ARP-Scan en el hacking ético para saber qué dispositivos están en la red, como computadoras y teléfonos. Esto es útil para asegurarse de que solo dispositivos permitidos estén conectados y para detectar posibles intrusos.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1. arp-scan <IP/rango>
+Este comando escanea una red y muestra las direcciones IP y MAC de los dispositivos conectados.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. arp-scan -l
+Muestra una lista de direcciones IP y MAC de dispositivos en tu red.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. arp-scan -I <interfaz>
+Escanea usando una interfaz de red específica (como Wi-Fi o Ethernet).
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. arp-scan -g
+Escanea la red usando la puerta de enlace predeterminada para encontrar dispositivos conectados.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. arp-scan --arpspa <IP1> <IP2>
+Escanea solo entre dos direcciones IP para encontrar dispositivos.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. arp-scan -r <reintentos>
+Este comando especifica la cantidad de veces que debe intentar obtener una respuesta del dispositivo. Útil si algunos dispositivos no responden de inmediato.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7. arp-scan --quiet
+Realiza el escaneo en modo silencioso, mostrando solo los resultados sin detalles adicionales.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8. arp-scan -q
+Similar al comando anterior, reduce la cantidad de información mostrada durante el escaneo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+9. arp-scan -B <IP>
+Permite definir una dirección IP de inicio para el escaneo. Puede ayudar a escanear solo una parte específica de la red.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+10. arp-scan --localnet
+Escanea automáticamente toda la red local, detectando dispositivos conectados.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11. arp-scan -v
+Muestra detalles adicionales durante el escaneo, como direcciones IP resueltas.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12. arp-scan -I <interfaz> -T <target>
+Combina una interfaz de red específica con un objetivo de escaneo particular.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13. arp-scan -g -W <retraso>
+Realiza un escaneo con pausas entre dispositivos para reducir la carga en la red. Específico para redes congestionadas.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14. arp-scan -N <número>
+Limita el número de dispositivos a mostrar en el resultado del escaneo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+15. arp-scan --file=<archivo>
+Permite leer direcciones IP y MAC desde un archivo en lugar de escanear la red.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16. arp-scan --interface=<nombre>
+Especifica la interfaz de red que deseas usar para el escaneo. Útil si tienes varias interfaces.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+17. arp-scan --quiet --localnet
+Realiza un escaneo silencioso de toda la red local, mostrando solo los resultados.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+18. arp-scan --ignoredups
+Omite las direcciones IP duplicadas en el resultado del escaneo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+19. arp-scan --destaddr=<MAC>
+Escanea solo para una dirección MAC de destino específica.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20. arp-scan --timeout=<tiempo>
+Establece un tiempo de espera para las respuestas de los dispositivos durante el escaneo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21. arp-scan -B <IP1>-<IP2>
+Define un rango de direcciones IP para el escaneo. Útil para explorar un segmento específico de la red.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+22. arp-scan --data=<archivo>
+Permite cargar direcciones IP y MAC desde un archivo externo para el escaneo.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+23. arp-scan --ignoredups --localnet
+Realiza un escaneo de la red local, evitando mostrar direcciones IP duplicadas.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+24. arp-scan --all
+Escanea todas las direcciones IP posibles en la red, sin omitir ninguna.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+25. arp-scan --max-retries=<número>
+Establece el número máximo de reintentos para obtener respuestas de dispositivos.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Los comandos mas utilizados en Hacking son:
+
+arp-scan <IP/rango>: Realizar un escaneo básico para encontrar dispositivos en una red.
+
+****************************************************************************************************
+
+arp-scan -l: Mostrar una lista de direcciones IP y MAC de dispositivos en la red.
+
+****************************************************************************************************
+
+arp-scan -I <interfaz>: Escanear usando una interfaz de red específica.
+
+****************************************************************************************************
+
+arp-scan --interface=<nombre>: Especificar la interfaz de red que deseas usar para el escaneo.
+
+****************************************************************************************************
+
+arp-scan -g: Escanear la red utilizando la puerta de enlace predeterminada para encontrar dispositivos.
+
+****************************************************************************************************
+
+arp-scan --localnet: Escanear automáticamente toda la red local para detectar dispositivos conectados.
+
+****************************************************************************************************
+
+arp-scan --quiet: Realizar el escaneo en modo silencioso, mostrando solo los resultados sin detalles adicionales.
+
+****************************************************************************************************
+
+arp-scan --ignoredups: Evitar mostrar direcciones IP duplicadas en el resultado del escaneo.
+
+****************************************************************************************************
+
+arp-scan --all: Escanear todas las direcciones IP posibles en la red, sin omitir ninguna.
+
+****************************************************************************************************
+
+arp-scan --destaddr=<MAC>: Escanear solo para una dirección MAC de destino específica.
