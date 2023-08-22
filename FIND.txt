@@ -1,0 +1,54 @@
+**** FIND ****
+
+find <ruta> -name <nombre>:
+Encuentra archivos con un nombre específico en la ruta especificada.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -type f:
+Encuentra todos los archivos en la ruta especificada.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -type d:
+Encuentra todos los directorios en la ruta especificada.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -user <nombre_usuario>:
+Encuentra archivos propiedad de un usuario específico en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -group <nombre_grupo>:
+Encuentra archivos pertenecientes a un grupo específico en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -size +<tamaño>:
+Encuentra archivos más grandes que el tamaño especificado en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -size -<tamaño>:
+Encuentra archivos más pequeños que el tamaño especificado en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -mtime <días>:
+Encuentra archivos modificados hace cierta cantidad de días en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -exec <comando>:
+Ejecuta un comando en cada archivo encontrado en la ruta.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -name "<patrón>" -exec grep -l "<texto>" {} \;:
+Busca archivos que coincidan con el patrón y luego busca dentro de ellos el texto específico.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+find <ruta> -type f -exec chmod <permisos> {} \;:
+Cambia los permisos de todos los archivos en la ruta especificada.
